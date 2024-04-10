@@ -244,7 +244,30 @@ func _ready():
 	for i in inventory.keys():
 		print(i)
 		print(inventory[i])
-"""
 
+#Ejemplo de funcion con parametros (obligatorios)
+func _ready():
+	myFunc("Jesus","17")
+func myFunc(name,age):
+	print("Hi, " + name + " You Have " + str(age) + " Years old.")
+
+#mi_funcion tiene dos parámetros: nombre y edad.
+#Al llamar a la función, se le asignan los valores "Juan" y 25 a los 
+#parámetros, respectivamente.
+#Dentro de la función, se usan los valores de los parámetros para 
+#personalizar el mensaje que se imprime.
+
+#Ejemplo de func con parametros opcionales
+func _ready():
+	greet("Jesus")
+	greet("Jesus", "Welcome")
+
+func greet(name, greeting = "Hi"):
+	print(greeting + "," + name)
+
+#greet tiene dos parámetros: nombre y saludo.
+#greeting tiene un valor predeterminado de "Hola" si no se especifica 
+#al llamar a la función.
+"""
 
 
